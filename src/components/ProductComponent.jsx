@@ -9,7 +9,7 @@ const ProductComponent = ({ products }) => {
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {products.map(({ id, title, image, price, category }) => (
         <Link key={id} to={`/product/${id}`} className="group">
-          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition group-hover:shadow-md">
+          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition group-hover:shadow-md h-100">
             <div className="aspect-square overflow-hidden rounded-xl bg-gray-50">
               <img
                 src={image}
